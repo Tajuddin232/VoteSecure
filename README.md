@@ -9,12 +9,19 @@ ROUTES?
 
 voting app functionality : 
 1.user sign in / sing up
+
 2.see the list of candidates
+
 3.vote one of the candidate
+
 4.there is a route which shows the list of the candidates and their live vote counts sorted by their vote counts
+
 5.user data must contain their one unique govt id proof
+
 6.there should be one admin who can only maintain the table of the candidates and he cant able to vote
+
 7.user can change the password
+
 8.user can only login with govt id card number and password
 
 
@@ -23,18 +30,25 @@ voting app functionality :
 ROUTES : 
 
 User authentication : 
+
     /signup : POST - create a new user account
+    
     /login : POST - login to an existing account. [no and password]
 
 Voting : 
+
     /candidates : GET - get the list of candidates
+    
     /vote/:candidate : POST - Vote for a specific candidate
 
 Vote counting: 
+
     /vote/counts : GET the list of candidates sorted by their vote counts.
 
 User profiles : 
+
     /profile : GET - Get the user profile information
+    
     /profile/password : PUT - change the user password
 
 Admin candidate Management : 
